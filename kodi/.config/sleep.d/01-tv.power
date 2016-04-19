@@ -1,0 +1,11 @@
+#!/bin/sh
+case "$1" in
+   pre)
+    #<do something on suspend>
+    curl raspi2:8080/off
+     ;;
+   post)
+    # <do something on resume>
+    curl raspi2:8080/on
+     ;;
+esac
