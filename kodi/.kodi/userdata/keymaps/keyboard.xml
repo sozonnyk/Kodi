@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keymap>
+
+  <global>
+    <keyboard>
+      <l mod="ctrl">RunScript(/storage/.kodi/userdata/audio.py,h)</l>
+      <l mod="alt">RunScript(/storage/.kodi/userdata/audio.py,d)</l>
+      <p>PlayPause</p>
+      <q>Queue</q>
+      <browser_search/>
+      <browser_home>XBMC.ActivateWindow(Home)</browser_home>
+      <space>XBMC.ActivateWindiw(videoplaylist)</space>
+      <delete mod="ctrl">XBMC.Suspend</delete>
+      <pageup mod="alt">RunScript(/storage/.kodi/userdata/raspi.py,on)</pageup>
+      <pagedown mod="alt">RunScript(/storage/.kodi/userdata/raspi.py,off)</pagedown>
+      <volume_down mod="alt">RunScript(/storage/.kodi/userdata/raspi.py,voldown)</volume_down>
+      <volume_up mod="alt">RunScript(/storage/.kodi/userdata/raspi.py,volup)</volume_up>
+    </keyboard>
+  </global>
+  
+  <MyVideoFiles>
+    <keyboard>
+      <space>XBMC.ActivateWindiw(videoplaylist)</space>
+      <q>Queue</q>
+      <w>ToggleWatched</w>
+    </keyboard>
+  </MyVideoFiles>
+
+  <MyVideoPlaylist>
+    <keyboard>
+      <space>Back</space>
+      <delete>Delete</delete>
+      <u>MoveItemUp</u>
+      <d>MoveItemDown</d>
+    </keyboard>
+  </MyVideoPlaylist>
+
+<tvchannels>
+  <keyboard>
+    <prev_track>PreviousChannelGroup</prev_track>
+    <next_track>NextChannelGroup</next_track>
+    <e>ActivateWindow(tvguide)</e>
+  </keyboard>
+</tvchannels>
+
+<tvguide>
+  <keyboard>
+    <prev_track>PreviousChannelGroup</prev_track>
+    <next_track>NextChannelGroup</next_track>
+    <e>ActivateWindow(tvchannels)</e>
+  </keyboard>
+</tvguide>
+
+  <Home>
+    <keyboard>
+      <v>ActivateWindow(video)</v>
+      <t>ActivateWindow(tvchannels)</t>
+      <p>ActivateWindow(settings)</p>
+      <i>info</i>
+    </keyboard>
+  </Home>
+
+  <FullscreenVideo>
+    <keyboard>
+      <left mod="alt">XBMC.RunScript(special://home/addons/plugin.video.shura.tv/OneMinBack.py)</left>
+      <right mod="alt">XBMC.RunScript(special://home/addons/plugin.video.shura.tv/OneMinForward.py)</right>
+      <up mod="alt">XBMC.RunScript(special://home/addons/plugin.video.shura.tv/ThreeMinForward.py)</up>
+      <down mod="alt">XBMC.RunScript(special://home/addons/plugin.video.shura.tv/ThreeMinBack.py)</down>
+      <t>ShowSubtitles</t>
+      <t mod="shift">NextSubtitle</t>
+      <t mod="ctrl">SubtitleDelay</t>
+      <l>AudioNextLanguage</l>
+    </keyboard>
+  </FullscreenVideo>
+
+</keymap>

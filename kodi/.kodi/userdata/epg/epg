@@ -1,0 +1,6 @@
+#!/bin/sh
+
+EPG=/storage/.kodi/userdata/epg
+URL=http://www.teleguide.info/download/new3/xmltv.xml.gz
+
+curl -s $URL | gzip -d -c | sed -f $EPG/epg.sed  > $EPG/epg.xml
