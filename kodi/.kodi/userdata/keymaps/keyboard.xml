@@ -9,7 +9,7 @@
       <q>Queue</q>
       <browser_search/>
       <browser_home>XBMC.ActivateWindow(Home)</browser_home>
-      <space>XBMC.ActivateWindiw(videoplaylist)</space>
+      <space>XBMC.ActivateWindow(videoplaylist)</space>
       <delete mod="ctrl">XBMC.Suspend</delete>
       <pageup mod="alt">RunScript(/storage/.kodi/userdata/raspi.py,on)</pageup>
       <pagedown mod="alt">RunScript(/storage/.kodi/userdata/raspi.py,off)</pagedown>
