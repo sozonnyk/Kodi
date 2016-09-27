@@ -20,7 +20,7 @@
   
   <MyVideoFiles>
     <keyboard>
-      <space>XBMC.ActivateWindiw(videoplaylist)</space>
+      <space>XBMC.ActivateWindow(videoplaylist)</space>
       <q>Queue</q>
       <w>ToggleWatched</w>
     </keyboard>
